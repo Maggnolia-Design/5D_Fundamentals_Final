@@ -6,10 +6,13 @@
       <meta name="description">
       <title>Homepage</title>
       <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="special-pages.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
       <script language="javascript" src="sketch.js" type="text/javascript"></script>
       <script src="p5/libraries/p5.js" type="text/javascript"></script>
       <script src="p5/libraries/p5.dom.js" type="text/javascript"></script>
-      <script type="text/javascript">
+
+<!--       <script type="text/javascript">
          function show_gif(src) {
             show_image(src, 75, 75, "Gif");
          }
@@ -116,13 +119,46 @@
                showGif
             }
 
-      </script>
-
-
+      </script> -->
    </head>
 
    <body>
       <h1><a href="index.html">Happiness is like...</a></h1>
+      <div id="BlueSquig_Container">
+         <div id="BlueSquig"><img id="BlueSquig_1" src="GIF/BlueSquig_1.gif"></div>
+         <div id="BlueSquig"><img id="BlueSquig_2" src="GIF/BlueSquig_2.gif"></div>
+         <div id="BlueSquig"><img id="BlueSquig_3" src="GIF/BlueSquig_3.gif"></div>
+         <div id="BlueSquig"><img id="BlueSquig_4" src="GIF/BlueSquig_4.gif"></div>
+         <div id="BlueSquig"><img id="BlueSquig_5" src="GIF/BlueSquig_5.gif"></div>
+         <div id="BlueSquig"><img id="BlueSquig_5" src="GIF/BlueSquig_6.gif"></div>
+         <div id="BlueSquig"><img id="BlueSquig_5" src="GIF/BlueSquig_7.gif"></div>
+         <div id="BlueSquig"><img id="BlueSquig_5" src="GIF/BlueSquig_8.gif"></div>
+      </div>
+
+<!--       <script>
+         var gif = new Array()
+         gif[0]="GIF/BlueSquig_1.gif"
+         gif[1]="GIF/BlueSquig_2.gif"
+         gif[2]="GIF/BlueSquig_3.gif"
+
+         $(function(){
+            $(document).keypress(function(e){
+               if ($(e.target).is('input, textarea')) {
+                  return;
+               };
+               if (e.which === 113) {
+                  // Show an image
+                  var new_img =  gif[Math.floor(Math.random() * gif.length)];;
+               } else if (e.which === 119){
+                  // Show another image
+                  var new_img =  gif[Math.floor(Math.random() * gif.length)];;
+               } else if (e.which === 101){
+                  // Show another image
+                  var new_img =  gif[Math.floor(Math.random() * gif.length)];;
+
+            };
+          });
+      </script> -->
 
       <div class="bar-options">
          <ul>
