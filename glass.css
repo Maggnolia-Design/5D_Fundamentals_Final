@@ -1,0 +1,51 @@
+.background-img {
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   margin-left: auto;
+   margin-right: auto;
+   width: 900px;
+   height: 400px;
+   background-color: #111;
+   overflow: hidden;
+}
+
+.background-img img {
+   width: 900px;
+   height: auto;
+}
+
+#glass.container {
+   position: absolute;
+   width: 900px;
+   height: 400px;
+   overflow: hidden;
+}
+
+#glass {
+   position: absolute;
+   top:11rem;
+   width: 950px;
+   height: 460px;
+}
+
+#glass:nth-of-type(2) {
+   position: absolute;
+   top:9rem;
+   left:4rem;
+   width: 950px;
+   height: 460px;
+}
+
+#glass>div {
+   width: 10%; height:20%; float:left;
+   background-color:rgba(17,17,17,.7);
+}
+
+#glass-container:hover div{
+   background-color:rgba(17,17,17,0);
+   transform: rotate(28deg) scale(0.575) skew(-69deg) translate(0px);
+   -webkit-transform: rotate(28deg) scale(0.575) skew(-69deg) translate(0px);
+   -moz-transform: rotate(28deg) scale(0.575) skew(-69deg) translate(0px);
+   -o-transform: rotate(28deg) scale(0.575) skew(-69deg) translate(0px);
+   -ms-transform: rotate(28deg) scale(0.575) skew(-69deg) translate(0px);
+}

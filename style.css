@@ -3,6 +3,7 @@ body {
    background-color: #111
 }
 
+/*BAR and TITLE*/
 a{
    color: white;
    font-family: Georgia;
@@ -10,7 +11,12 @@ a{
 }
 
 h1 {
-   font-size: 3rem
+   font-size: 2rem;
+   padding-left:7%;
+}
+
+.title {
+   font-size: 3rem;
 }
 
 li {
@@ -18,15 +24,19 @@ li {
    text-decoration: none;
    font-size: 1.3rem;
    padding: 1.1rem 2.3rem;
+   margin: .5rem;
    background-color: #222;
-   margin-right: .5rem;
-   margin-top: 4rem;
    width: 170px;
    text-align: center;
 }
 
-.bar-options li{
-   margin-top: 24rem;
+.bar-options-home {
+   margin-top: 4rem;
+   width:1000px;
 }
 
-
+.bar-options{
+   margin-right:auto;
+   margin-left:auto;
+   width:1000px;
+}
