@@ -124,15 +124,34 @@
 
    <body>
       <h1><a href="index.html">Happiness is like...</a></h1>
-      <div id="BlueSquig_Container">
-         <div id="BlueSquig"><img id="BlueSquig_1" src="GIF/BlueSquig_1.gif"></div>
-         <div id="BlueSquig"><img id="BlueSquig_2" src="GIF/BlueSquig_2.gif"></div>
-         <div id="BlueSquig"><img id="BlueSquig_3" src="GIF/BlueSquig_3.gif"></div>
-         <div id="BlueSquig"><img id="BlueSquig_4" src="GIF/BlueSquig_4.gif"></div>
-         <div id="BlueSquig"><img id="BlueSquig_5" src="GIF/BlueSquig_5.gif"></div>
-         <div id="BlueSquig"><img id="BlueSquig_5" src="GIF/BlueSquig_6.gif"></div>
-         <div id="BlueSquig"><img id="BlueSquig_5" src="GIF/BlueSquig_7.gif"></div>
-         <div id="BlueSquig"><img id="BlueSquig_5" src="GIF/BlueSquig_8.gif"></div>
+      <div id="Container">
+         <div><img id="BlueSquig_1" class="hidden" src="GIF/BlueSquig_1.gif"></div>
+         <div><img id="BlueSquig_2" class="hidden" src="GIF/BlueSquig_2.gif"></div>
+         <div><img id="BlueSquig_3" class="hidden" src="GIF/BlueSquig_3.gif"></div>
+         <div><img id="BlueSquig_4" class="hidden" src="GIF/BlueSquig_4.gif"></div>
+         <div><img id="BlueSquig_5" class="hidden" src="GIF/BlueSquig_5.gif"></div>
+         <div><img id="BlueSquig_6" class="hidden" src="GIF/BlueSquig_6.gif"></div>
+         <div><img id="BlueSquig_7" class="hidden" src="GIF/BlueSquig_7.gif"></div>
+         <div><img id="BlueSquig_8" class="hidden" src="GIF/BlueSquig_8.gif"></div>
+         <div><img id="PinkSquig_1" class="hidden" src="GIF/PinkSquig_1.gif"></div>
+         <div><img id="PinkSquig_2" class="hidden" src="GIF/PinkSquig_2.gif"></div>
+         <div><img id="PinkSquig_3" class="hidden" src="GIF/PinkSquig_3.gif"></div>
+         <div><img id="PinkSquig_4" class="hidden" src="GIF/PinkSquig_4.gif"></div>
+         <div><img id="PinkSquig_5" class="hidden" src="GIF/PinkSquig_5.gif"></div>
+
+         <div><img id="BlueTri_1" class="hidden" src="GIF/BlueTri_1.gif"></div>
+         <div><img id="BlueTri_2" class="hidden" src="GIF/BlueTri_2.gif"></div>
+         <div><img id="BlueTri_3" class="hidden" src="GIF/BlueTri_3.gif"></div>
+         <div><img id="BlueTri_4" class="hidden" src="GIF/BlueTri_4.gif"></div>
+         <div><img id="BlueTri_5" class="hidden" src="GIF/BlueTri_5.gif"></div>
+         <div><img id="BlueTri_6" class="hidden" src="GIF/BlueTri_6.gif"></div>
+         <div><img id="BlueTri_7" class="hidden" src="GIF/BlueTri_7.gif"></div>
+         <div><img id="BlueTri_8" class="hidden" src="GIF/BlueTri_8.gif"></div>
+         <div><img id="PinkTri_1" class="hidden" src="GIF/PinkTri_1.gif"></div>
+         <div><img id="PinkTri_2" class="hidden" src="GIF/PinkTri_2.gif"></div>
+         <div><img id="PinkTri_3" class="hidden" src="GIF/PinkTri_3.gif"></div>
+         <div><img id="PinkTri_4" class="hidden" src="GIF/PinkTri_4.gif"></div>
+         <div><img id="PinkTri_5" class="hidden" src="GIF/PinkTri_5.gif"></div>
       </div>
 
 <!--       <script>
@@ -159,6 +178,103 @@
             };
           });
       </script> -->
+      <script>
+         var $listItems = $('img');
+
+         $(document).on('keypress', function(e) {
+            //SQUIG VARS
+            var one = 'BlueSquig_1';
+            var two = 'BlueSquig_2';
+            var three = 'BlueSquig_3';
+            var four = 'BlueSquig_4';
+            var five = 'BlueSquig_5';
+            var six = 'BlueSquig_6';
+            var seven = 'BlueSquig_7';
+            var eight = 'BlueSquig_8';
+            var nine = 'PinkSquig_1';
+            var ten = 'PinkSquig_2';
+            var eleven = 'PinkSquig_3';
+            var twelve = 'PinkSquig_4';
+
+            //TRI VARS
+            var un = 'BlueTri_1';
+            var deux = 'BlueTri_2';
+            var trois = 'BlueTri_3';
+            var quatre = 'BlueTri_4';
+            var cinq = 'BlueTri_5';
+            var six = 'BlueTri_6';
+            var sept = 'BlueTri_7';
+            var huit = 'BlueTri_8';
+            var neuf = 'PinkTri_1';
+            var dix = 'PinkTri_2';
+
+            //SQUIG STATEMENTS
+            if ( e.which == 113 ) {
+               e.preventDefault();
+               $('img#' + one).toggleClass('hidden');
+            } else if ( e.which == 119 ) {
+               e.preventDefault();
+               $('img#' + two).toggleClass('hidden');
+            } else if ( e.which == 101 ) {
+               e.preventDefault();
+               $('img#' + three).toggleClass('hidden');
+            } else if ( e.which == 114 ) {
+               e.preventDefault();
+               $('img#' + four).toggleClass('hidden');
+            } else if ( e.which == 116 ) {
+               e.preventDefault();
+               $('img#' + five).toggleClass('hidden');
+            } else if ( e.which == 121 ) {
+               e.preventDefault();
+               $('img#' + six).toggleClass('hidden');
+            } else if ( e.which == 117 ) {
+               e.preventDefault();
+               $('img#' + seven).toggleClass('hidden');
+            } else if ( e.which == 105 ) {
+               e.preventDefault();
+               $('img#' + eight).toggleClass('hidden');
+            } else if ( e.which == 111 ) {
+               e.preventDefault();
+               $('img#' + nine).toggleClass('hidden');
+            } else if ( e.which == 112 ) {
+               e.preventDefault();
+               $('img#' + ten).toggleClass('hidden');
+            } else if ( e.which == 97 ) {
+               e.preventDefault();
+               $('img#' + eleven).toggleClass('hidden');
+            } else if ( e.which == 115 ) {
+               e.preventDefault();
+               $('img#' + twelve).toggleClass('hidden');
+            }
+
+            //TRI STATEMENTS
+            else if ( e.which == 100 ) {
+               e.preventDefault();
+               $('img#' + un).toggleClass('hidden');
+            } else if ( e.which == 102 ) {
+               e.preventDefault();
+               $('img#' + deux).toggleClass('hidden');
+            } else if ( e.which == 103 ) {
+               e.preventDefault();
+               $('img#' + trois).toggleClass('hidden');
+            } else if ( e.which == 104 ) {
+               e.preventDefault();
+               $('img#' + quatre).toggleClass('hidden');
+            } else if ( e.which == 106 ) {
+               e.preventDefault();
+               $('img#' + cinq).toggleClass('hidden');
+            } else if ( e.which == 107 ) {
+               e.preventDefault();
+               $('img#' + six).toggleClass('hidden');
+            } else if ( e.which == 108 ) {
+               e.preventDefault();
+               $('img#' + sept).toggleClass('hidden');
+            } else if ( e.which == 122 ) {
+               e.preventDefault();
+               $('img#' + huit).toggleClass('hidden');
+            }
+         });
+      </script>
 
       <div class="bar-options">
          <ul>

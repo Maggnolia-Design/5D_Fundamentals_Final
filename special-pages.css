@@ -52,9 +52,9 @@
    padding-left:12%;
 }
 
-/* BLUE SQUIGS */
+/* SQUIGS */
 
-#BlueSquig_Container {
+#Container {
    margin-top: 3rem;
    margin-bottom: 3rem;
    margin-left: auto;
@@ -64,12 +64,16 @@
    overflow: hidden
 }
 
-#BlueSquig {
+#Container>div {
    width: 90px;
    float:left;
 }
 
-#BlueSquig img {
-   height: 300px;
+#Container>div>img {
+   height: 350px;
    width:auto;
+}
+
+.hidden{
+  display: none;
 }
