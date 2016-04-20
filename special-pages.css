@@ -7,8 +7,6 @@
    margin-right: auto;
    width: 900px;
    height: 400px;
-/*   position: relative; */
-/*   background-color: #111; */
 }
 
 #glass-container>div>img{
@@ -31,6 +29,27 @@
 #glass-container>div:hover img{
 /*   transform: rotate(18deg) skew(-30deg); */
    visibility:visible;
+}
+
+/* BUBBLES */
+
+#bubbles-container {
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   height: 400px;
+}
+
+#bubbles-container>p{
+   position:absolute;
+   right:7rem;
+   color:grey;
+   line-height: 2rem;
+}
+
+#defaultCanvas0{
+   position:absolute;
+   top:11rem;
+   padding-left:12%;
 }
 
 /* BLUE SQUIGS */

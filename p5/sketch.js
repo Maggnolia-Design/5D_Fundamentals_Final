@@ -2,7 +2,8 @@ var bubbles = [];
 var r,g,b;
 
 function setup() {
-    createCanvas(700,700).addclass("bubbles-p5");
+    createCanvas(900,400);
+    background('#111');
 //    for (var i=0; i<10; 1++){
 //      bubbles[i] = new Bubble(random(0,width),random(0,height));
 //    }
@@ -17,7 +18,7 @@ function keyPressed(){
 //splice: 1st argumnet = index; 2nd argument=how many
 //delete last bubble when delete is pressed
 //change background color when enter is pressed
-  if (keyCode===BACKSPACE || keyCode===DELETE){
+  if (keyCode===SHIFT){
 //  bubbles.splice(bubbles.length-1,1);
 //  or, use pop, and it will take off the last hting you put down
     bubbles.pop()
@@ -48,7 +49,7 @@ function Bubble (x,y) {
   this.display=function(){
     stroke(200,200,250);
     fill(150,150,200,50);
-    ellipse(this.x,this.y,36,36);
+    ellipse(this.x,this.y,56,56);
   }
   this.move=function(){
     this.x = this.x + random(-1,1);
