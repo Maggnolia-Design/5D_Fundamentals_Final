@@ -65,12 +65,17 @@
 }
 
 #Container>div {
-   width: 90px;
+   width: 15px;
    float:left;
 }
 
-#Container>div>img {
+.Squig img {
    height: 350px;
+   width:auto;
+}
+
+.Tri img{
+   height:500px;
    width:auto;
 }
 

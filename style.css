@@ -31,7 +31,7 @@ li {
 }
 
 .bar-options-home {
-   margin-top: 4rem;
+   margin-top: 7rem;
    width:1000px;
 }
 
@@ -39,4 +39,15 @@ li {
    margin-right:auto;
    margin-left:auto;
    width:1000px;
+}
+
+.desc {
+   padding-left:7%;
+   padding-top: 3rem;
+   width:700px;
+   color: #888;
+   line-height: 1.8rem;
+   font-family: Georgia;
+   font-style: italic;
+   font-size: 1.2rem;
 }

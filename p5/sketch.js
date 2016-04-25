@@ -53,6 +53,6 @@ function Bubble (x,y) {
   }
   this.move=function(){
     this.x = this.x + random(-1,1);
-    this.y = this.y - 0.75;
+    this.y = this.y - 1.2;
   }
 }
