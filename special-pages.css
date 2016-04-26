@@ -16,6 +16,8 @@
    -webkit-transition-duration: .2s;
    -moz-transition-property: visibility;
    -moz-transition-duration: .2s;
+   -ms-transition-property: visibility;
+   -ms-transition-duration: .2s;
    -o-transition-property: visibility;
    -o-transition-duration: .2s;
    transition-property: visibility;
@@ -29,6 +31,23 @@
 #glass-container>div:hover img{
 /*   transform: rotate(18deg) skew(-30deg); */
    visibility:visible;
+}
+
+#moving_cursor {
+   -webkit-animation: moving_cursor 3s linear alternate infinite;
+   -moz-animation: moving_cursor 3s linear alternate infinite;
+   -ms-animation: moving_cursor 3s linear alternate infinite;
+   -o-animation: moving_cursor 3s linear alternate infinite;
+   animation: moving_cursor 3s linear alternate infinite;
+
+   position: absolute;
+   top: 7rem;
+   height: 1.2rem;
+}
+
+@keyframes moving_cursor {
+   from { margin-left: 7%; }
+   to { margin-left: 21%; }
 }
 
 /* BUBBLES */
@@ -50,6 +69,13 @@
    position:absolute;
    top:11rem;
    left:15%;
+}
+
+#click_gif {
+   position: absolute;
+   top: 2.2rem;
+   left: 38%;
+   height: 10rem;
 }
 
 /* SQUIGS */
@@ -81,4 +107,22 @@
 
 .hidden{
   display: none;
+}
+
+#blinking-cursor {
+  font-weight: 100px;
+  font-size: 2.2rem;
+  color: #2E3D48;
+  padding-left: 1rem;
+
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to { color: transparent;}
+  50% {color: white;}
 }

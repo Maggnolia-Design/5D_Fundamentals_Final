@@ -10,6 +10,28 @@ a{
    text-decoration: none;
 }
 
+span:first-child {
+   color: #303030;
+   -webkit-text-shadow: -3px 0px 22px rgba(105,105,105, 1);
+   -moz-text-shadow: -3px 0px 22px rgba(105,105,105, 1);
+   -ms-text-shadow: -3px 0px 22px rgba(105,105,105, 1);
+   -o-text-shadow: -3px 0px 22px rgba(105,105,105, 1);
+   text-shadow: -3px 0px 22px rgba(105,105,105, 1);
+}
+
+#hp-title {
+   text-shadow: -3px 0px 30px rgba(105,105,105, 1);
+}
+
+.active {
+   color: #303030;
+   -webkit-text-shadow: -3px 0px 16px rgba(97,97,97, 1);
+   -moz-text-shadow: -3px 0px 16px rgba(97,97,97, 1);
+   -ms-text-shadow: -3px 0px 16px rgba(97,97,97, 1);
+   -o-text-shadow: -3px 0px 16px rgba(97,97,97, 1);
+   text-shadow: -3px 0px 16px rgba(97,97,97, 1);
+}
+
 h1 {
    font-size: 2rem;
    padding-left:7%;
